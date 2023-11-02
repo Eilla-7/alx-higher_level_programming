@@ -11,7 +11,7 @@ if __name__ == "__main__":
             print("{}: {}".format(i, arg[i]))
 
     elif length == 0:
-        print("0 argument.")
+        print("{} arguments.".format(length))
 
     else:
         print("{}: argument:".format(length))
