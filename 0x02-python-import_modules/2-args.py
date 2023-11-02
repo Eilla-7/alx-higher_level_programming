@@ -14,5 +14,5 @@ if __name__ == "__main__":
         print("0 argument.")
 
     else:
-        print("1: argument:")
+        print("{}: argument:".format(length))
         print("{}: {}".format(length, arg[1]))
