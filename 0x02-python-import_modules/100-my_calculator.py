@@ -23,5 +23,6 @@ if __name__ == "__main__":
         result = div(a, b)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
+        sys.exit(1)
 
     print(f"{a} {operator} {b} = {result}")
