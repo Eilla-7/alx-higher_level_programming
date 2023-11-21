@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """square Class"""
 
 
@@ -8,8 +7,8 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """New square
         Args:
-            size: the size of the square
-            position(int, int): the position of the square
+            size (int): the size of the square
+            positioni (int, int): the position of the square
         """
         self.__size = size
         self.__position = position
