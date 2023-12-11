@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Base Class Module"""
 
+import json
+
 
 class Base:
     """Base class representation"""
@@ -19,5 +21,4 @@ class Base:
         """returns the JSON string representation of list_dictionaries"""
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
-        else:
-            return dumps(list_dictionaries)
+        return json.dumps(list_dictionaries)
