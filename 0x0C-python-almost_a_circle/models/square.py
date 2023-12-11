@@ -38,6 +38,6 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """Update attributes"""
         if args:
-            self.__update(*args)
+            self.updatee(*args)
         elif kwargs:
-            self.__update(**kwargs)
+            self.updatee(**kwargs)
