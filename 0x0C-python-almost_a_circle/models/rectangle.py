@@ -77,3 +77,17 @@ class Rectangle(Base):
             [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for j in range(self.width)]
             print("")
+
+    def __str__(self):
+        """Returns string information"""
+        return (
+                "[{}] ({}) {}/{} - {}/{} "
+                .format(
+                    type(self).__name__,
+                    self.id,
+                    self.x,
+                    self.y,
+                    self.width,
+                    self.height
+                    )
+                )
