@@ -34,7 +34,7 @@ class Square(Rectangle):
             self.x = x
         if y is not None:
             self.y = y
-    
+ 
     def update(self, *args, **kwargs):
         """Update attributes"""
         if args:
