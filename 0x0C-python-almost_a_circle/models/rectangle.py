@@ -92,7 +92,7 @@ class Rectangle(Base):
                     )
         )
 
-    def __update(self, id=None, width=None, height=None, x=None, y=None):
+    def update(self, id=None, width=None, height=None, x=None, y=None):
         """Assigns an argument to each attribute"""
         if id is not None:
             self.id = id
@@ -108,6 +108,6 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """assigns a key/value argument to attributes"""
         if args:
-            self.__update(*args)
+            self.update(*args)
         elif kwargs:
-            self.__update(**kwargs)
+            self.update(**kwargs)
