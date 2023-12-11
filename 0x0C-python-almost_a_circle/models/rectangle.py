@@ -37,7 +37,7 @@ class Rectangle(Base):
     @property
     def x(self):
         """X getter"""
-        return (slef.__x)
+        return (self.__x)
 
     @x.setter
     def x(self, value):
@@ -66,3 +66,14 @@ class Rectangle(Base):
     def area(self):
         """Returns the area of the recktangle"""
         return (self.width * self.height)
+
+    def display(self):
+        """Prints the rectangle with # character"""
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
+        [print("") for y in range(self.y)]
+        for i in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for j in range(self.width)]
+            print("")
