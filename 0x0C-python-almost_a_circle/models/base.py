@@ -44,11 +44,12 @@ class Base:
         from models.rectangle import Rectangle
         from models.square import Square
 
-        if cls is Rectangle:
-            dummy = Rectangle(1, 1)
-        elif cls is Square:
-            dummy = Square(1)
-        else:
-            dummy = None
-        dummy.update(**dictionary)
-        return dummy
+        if dictionary and dictionary != {}:
+            if cls is Rectangle:
+                dummy = Rectangle(1, 1)
+            elif cls is Square:
+                dummy = Square(1)
+            else:
+                dummy = None
+            dummy.update(**dictionary)
+            return dummy
