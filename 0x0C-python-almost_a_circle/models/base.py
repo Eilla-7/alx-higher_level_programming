@@ -3,7 +3,6 @@
 
 import json
 import csv
-import turtle
 
 
 class Base:
@@ -42,10 +41,14 @@ class Base:
 
     def create(cls, **dictionary):
         """returns an instance with all attributes already set"""
-        if dictionary and dictionary != {}:
-            if cls.__name__ == "Rectangle":
-                dum = cls(1, 1)
-            else:
-                dum = cls(1)
-            dum.update(**dictionary)
-            return dum
+        from models.rectangle import Rectangle
+        from models.square import Square
+
+        if cls is Rectangle:
+            dummy = Rectangle(1, 1)
+        elif cls is Square:
+            dummy = Square(1)
+        else:
+            dummy = None
+        dummy.update(**dictionary)
+        return dummy
