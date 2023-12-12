@@ -3,7 +3,6 @@
 
 import json
 import csv
-import turtle
 
 
 class Base:
@@ -58,6 +57,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """returns a list of instances"""
+        from os import path
         file_name = "{}.json".format(cls.__name__)
         if not path.isfile(file):
             return []
