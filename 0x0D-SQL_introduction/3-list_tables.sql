@@ -1,3 +1,3 @@
 -- List all tables in the specified database
-SET `mysql`;
+USE mysql;
 SHOW TABLES;
