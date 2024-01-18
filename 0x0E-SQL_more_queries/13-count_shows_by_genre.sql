@@ -1,5 +1,4 @@
 --List genres with the number of shows linked in hbtn_0d_tvshows database
-USE `hbtn_0d_tvshows`; -- Replace with the actual database name
 SELECT
     tv_genres.name AS genre,
     COUNT(tv_show_genres.show_id) AS number_of_shows
