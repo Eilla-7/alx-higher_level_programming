@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 """Script takes a URL as a command-line argument and attempts to fetch its
 content using the urllib module
+
+Usage:
+    python3 3-error_code.py <URL>
+
+Arguments:
+    <URL> : The URL whose content will be fetched
 """
 import sys
 import urllib.error

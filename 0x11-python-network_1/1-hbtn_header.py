@@ -2,6 +2,11 @@
 """
 Script takes a URL as a command-line argument and sends a request to that
 URL using the urllib module
+
+Usage:
+    python3 1-hbtn_header.py <URL>
+Arguments:
+    <URL> : The URL from which to fetch the X-Request-Id header
 """
 
 import sys

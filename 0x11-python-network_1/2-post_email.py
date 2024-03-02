@@ -1,5 +1,14 @@
 #!/usr/bin/python3
-"""Script takes two command-line arguments: a URL and an email address"""
+"""
+Script takes two command-line arguments: a URL and an email address
+
+Usage:
+    python3 2-post_email.py <URL> <EMAIL>
+
+Arguments:
+    <URL> : The URL to which the POST request will be sent
+    <EMAIL> : The email address to be included in the POST request data
+"""
 
 import sys
 import urllib.parse
