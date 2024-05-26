@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 
-"""Add Module"""
+"""
+
+Add Module that add two integers
+
+"""
 
 
 def add_integer(a, b=98):
 
-    """Ads two integers
-    Args:
+    """Args:
     a: the first integer
-    b: the second integer snd it is 98 by default
-
-    Returns: the sum of two integers
-    """
+    b: the second integer snd it is 98 by default"""
 
     if type(a) not in (int, float):
         raise TypeError("a must be an integer")
