@@ -53,4 +53,9 @@ Test with zero as one of the arguments:
 
 Test with large integers:
     >>> add_integer(1000000000, 2000000000)
+<<<<<<< HEAD
     3000000000
+=======
+    3000000000
+
+>>>>>>> origin/master
