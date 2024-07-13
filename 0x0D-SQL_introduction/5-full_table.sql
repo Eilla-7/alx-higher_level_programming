@@ -1,4 +1,2 @@
--- Print full table description of first_table in the database
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'first_table';
-
+-- Prints the full description of the table first_table in my MySQL server.
+SHOW CREATE TABLE `first_table`;
